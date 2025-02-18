@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "EB Garamond", serif;
+  transition-duration: 0.75s;
+}
+
+.box {
+	font-size: 14px;
+  box-sizing: border-box;
+  padding-top: 3.2em;
+  padding-bottom: 2.5em;
+  padding-left: 3.9em;
+  padding-right: 3.9em;
+  line-height: 2.7em;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  border-radius: 3px;
+}
+
+.changing-quote-and-author-set {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fading {
+  opacity: 0;
+}
+
+.quote-text {
+  margin: 0;
+  font-size: 35px;
+}
+
+.quote-author {
+	font-size: 22px;
+  text-align: right;
+}
+
+
+
+.buttons-set {
+	display: flex;
+  height: 33px;
+	gap: 5px;
+	justify-content: space-between;
+	font-size: 16px;
+}
+
+
+.small-buttons-set{
+	display: flex;
+	gap: 5px;
+}
+
+.new-quote-button{
+	line-height: 10px;
+	cursor: pointer;
+}
+
+.new-quote-button,
+.sending-quote-to-X,
+.sending-quote-to-BS {
+	color: #fff;
+	border: 0;
+  transition-duration: 0.75s;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.--sending-quote-peculiarities {
+  line-height: 10px;
+	text-decoration: none;
+	padding-right: 13px;
+	padding-left: 13px;
+}
+
+.new-quote-button:hover,
+.sending-quote-to-X:hover,
+.sending-quote-to-BS:hover
+{
+  filter: brightness(1.15);
+}
+
+
+
+
+
+@media (max-width: 414px) {
+.box{
+	padding-left: 2.9em;
+  padding-right: 2.9em;
+}
+.new-quote-button{
+		font-size: 12px;
+}
+.sending-quote-to-X,
+.sending-quote-to-BS{
+	font-size: 14px;
+}
+
+.buttons-set{
+  height: 27px;
+}
+.new-quote-button,
+.sending-quote-to-X,
+.sending-quote-to-BS {
+	padding: 7px;
+}
+
+.--sending-quote-peculiarities {
+  /* line-height:22x; */
+	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+}
